@@ -1,9 +1,6 @@
 class ProfileUpdatePage{
     constructor(page){
         this.page = page;
-      
-
-
         this.btnUserAccount = page.getByLabel("account of current user");
         this.btnProfile = page.getByRole("menuitem", { name: "Profile" });
         this.btnEdit = page.getByRole("button", { name: "Edit" });

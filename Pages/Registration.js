@@ -41,15 +41,8 @@ class Registration{
         await expect(this.alertToast).toBeVisible();
 
 
+}
 
-   
-
-     
-
-        
-
-
-    }
 }
 
 export default Registration;

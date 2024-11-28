@@ -24,7 +24,7 @@ test.describe("User Login", ()   => {
 
 
 
-
+ //Negative Test Case
     test("User can not Log in With Invalid Email", async ({page})  =>{
         await page.goto("/"); 
         const registeredUser = readFromJSONFile();
@@ -33,11 +33,7 @@ test.describe("User Login", ()   => {
         await expect(page.getByText('Invalid email or password')).toBeVisible({ timeout: 40000 });
         
     
-          
-        
-    
-    
-    })
+          })
 
 
 
@@ -49,11 +45,7 @@ test.describe("User Login", ()   => {
         await expect(page.getByText('Invalid email or password')).toBeVisible({ timeout: 40000 });
         
     
-          
-        
-    
-    
-    })
+        })
     
 
 })

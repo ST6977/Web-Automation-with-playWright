@@ -12,23 +12,9 @@ test.describe("User can add Item Successfully", ()=>{
         const loginPage = new LoginPage(page);
         const registeredUser = readFromJSONFile();
         await loginPage.loginUser(registeredUser.email, registeredUser.password);
-         // Wait for the "Dashboard" text to be visible (use Playwright's locator)
-    const dashboardLocator = page.locator('text=Dashboard');
-    await expect(dashboardLocator).toBeVisible({ timeout: 10000 }); // Increase timeout if needed
-       // await expect(page.getByText('Dashboard')).toBeVisible();
-    
-    
-         // Add items using AddItemPage
-    
-        //  const addItemPage = new AddCostPage(page);
-        //  const items = [
-        //     { name: "Pen", quantity: 1, amount: "20", date: "2024-11-10", month: "November", remarks: "good" },
-        //     { name: "Tiffin Box", quantity: 2, amount: "30", date: "2024-11-10", month: "November", remarks: "better" },
-        //   ];
-    
-        //   for(const item of items){
-        //     await addItemPage.addItem(item);
-        //   }
+        const dashboardLocator = page.locator('text=Dashboard');
+        await expect(dashboardLocator).toBeVisible({ timeout: 10000 }); // Increase timeout if needed
+   
     })
 
 

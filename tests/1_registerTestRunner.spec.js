@@ -99,10 +99,7 @@ test("User can not register with Invalid Email Format", async({page}) => {
 
 
 
-
-
-
-   // Wait for the toast message to appear and become visible (increase timeout)
+// Wait for the toast message to appear and become visible (increase timeout)
    const toastLocator = page.locator('.Toastify__toast');
    await toastLocator.waitFor({ state: 'visible', timeout: 40000 }); // Wait for up to 40 seconds for the toast
  

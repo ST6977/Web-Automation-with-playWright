@@ -12,7 +12,7 @@ test.describe("User can Upload Successfully", () => {
     
         await loginPage.loginUser(registeredUser.email, registeredUser.password);
          // Wait for the "Dashboard" text to be visible (use Playwright's locator)
-         const dashboardLocator = page.locator('text=Dashboard');
+        const dashboardLocator = page.locator('text=Dashboard');
         await expect(dashboardLocator).toBeVisible({ timeout: 40000 }); // Increase timeout if needed
 })
 

@@ -10,12 +10,7 @@ export default class AddCostPage{
         this.txtPurchaseDate = page.getByLabel("Purchase Date");
         this.selectMonth = page.getByLabel("Month");
         this.btnSubmit = page.getByRole("button", { name: "Submit" });
-      //  this.alert = page.locator("dialog[role='alert']"); 
-    
-
-
-
-
+     
     }
 
 }
