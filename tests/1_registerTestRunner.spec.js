@@ -42,7 +42,7 @@ test("User can not register with already used email", async({page}) => {
   const registeredUser = readFromJSONFile();
 
   function generatePhoneNumber(){
-      return "01" + Math.floor(100000000 + Math.random() * 900000000).toString();//Try with more than 11 Numbers
+      return "01" + Math.floor(100000000 + Math.random() * 900000000).toString();
   }
 
 
@@ -63,10 +63,10 @@ test("User can not register with already used email", async({page}) => {
 
    // Wait for the Toastify message to appear
    const toast = page.locator('.Toastify__toast'); 
-   toast.waitFor(); // Replace with the correct selector for your Toastify message
+   toast.waitFor(); 
 
    // Assert that the toast is visible and contains the expected message
-   await expect(toast).toBeVisible({ timeout: 40000 }); // Wait for up to 5 seconds for the toast to appear
+   await expect(toast).toBeVisible({ timeout: 40000 }); 
    await expect(toast).toHaveText("User with this email address already exists."); 
  
 })
