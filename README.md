@@ -3,7 +3,7 @@
 This project demonstrates web automation using **Playwright** to automate various user interactions and validations on the website [Daily Finance](https://dailyfinance.roadtocareer.net/). The automation script covers the following tasks:
 
 ## Features:
-1. **User Registration and Email Confirmation**:
+1. **User Registration**:
    - Registers a new user on the website.
    - Verifies the display of a toast message confirming registration.
 
@@ -46,7 +46,7 @@ This project demonstrates web automation using **Playwright** to automate variou
 ![Screenshot_28-11-2024_101347_localhost](https://github.com/user-attachments/assets/bea96dfa-688c-4ad4-bbf6-18e92dfd1b86)
 
 ## Full Automation Record Vedio:
-[https://screenrec.com/share/LeYjS1Hcti](vedio)
+[vedio](https://screenrec.com/share/LeYjS1Hcti)
 
 
 
