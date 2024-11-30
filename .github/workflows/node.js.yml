@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  schedule:
+  schedule:  
    - cron: '00 00 * * 1'  # Run every Monday at 12:00 AM UTC
       
 
