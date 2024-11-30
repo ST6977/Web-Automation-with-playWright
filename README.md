@@ -27,7 +27,7 @@ This project demonstrates web automation using **Playwright** to automate variou
 ## Setup:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/playwright-web-automation.git
+   git clone https://github.com/ST6977/Web-Automation-with-playWright.git
    ```
 2. Install the required dependencies:
    ```bash
